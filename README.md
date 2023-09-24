@@ -1,2 +1,4 @@
 # FruitGAN
-Generating realistic synthetic fruit images
+The main goal of this project is to generate high-quality (64x64) resolution images while aligning them accurately with provided image labels. After the training process, we evaluate the model's performance using important metrics such as the Inception Score and Frechet Inception Distance (FID). Additionally, this model serves the crucial purpose of generating a synthetic dataset, effectively augmenting data for training a classifier that relies on conditioning labels. The objective here is to investigate whether this synthetic dataset positively contributes to the classifier's performance.
+
+For our classification task, we employ a straightforward convolutional neural network (CNN) both before training (utilizing the original dataset) and after generating synthetic images. This step is crucial for assessing the CNN's ability to correctly categorize synthetic images and for making a meaningful comparison with the classifier's performance using the original dataset.
